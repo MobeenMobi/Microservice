@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "product-service\\product-service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "order-service\\order-service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "graphql-gateway\\graphql-gateway.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

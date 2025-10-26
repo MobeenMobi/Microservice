@@ -1,0 +1,6 @@
+@graphql_gateway_HostAddress = http://localhost:5128
+
+GET {{graphql_gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
