@@ -72,6 +72,7 @@ E:\microservices-sample\graphql-gateway\obj\Debug\net9.0\graphql-gateway.Assembl
 E:\microservices-sample\graphql-gateway\obj\Debug\net9.0\graphql-gateway.csproj.CoreCompileInputs.cache
 E:\microservices-sample\graphql-gateway\obj\Debug\net9.0\graphql-gateway.MvcApplicationPartsAssemblyInfo.cs
 E:\microservices-sample\graphql-gateway\obj\Debug\net9.0\graphql-gateway.MvcApplicationPartsAssemblyInfo.cache
+E:\microservices-sample\graphql-gateway\obj\Debug\net9.0\graphql-gateway.sourcelink.json
 E:\microservices-sample\graphql-gateway\obj\Debug\net9.0\rjimswa.dswa.cache.json
 E:\microservices-sample\graphql-gateway\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 E:\microservices-sample\graphql-gateway\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

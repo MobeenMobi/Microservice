@@ -14,7 +14,8 @@
           "HotChocolate.Data": "15.1.11",
           "HotChocolate.Data.EntityFramework": "15.1.11",
           "HotChocolate.Execution": "15.1.11",
-          "Microsoft.AspNetCore.OpenApi": "9.0.8"
+          "Microsoft.AspNetCore.OpenApi": "9.0.8",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1"
         },
         "runtime": {
           "graphql-gateway.dll": {}
@@ -724,6 +725,7 @@
           }
         }
       },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1": {},
       "System.Buffers/4.5.0": {},
       "System.IO.Hashing/8.0.0": {
         "runtime": {
@@ -1187,6 +1189,13 @@
       "sha512": "sha512-Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
       "path": "microsoft.openapi/1.6.17",
       "hashPath": "microsoft.openapi.1.6.17.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EfYANhAWqmWKoLwN6bxoiPZSOfJSO9lzX+UrU6GVhLhPub1Hd+5f0zL0/tggIA6mRz6Ebw2xCNcIsM4k+7NPng==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.22.1",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",

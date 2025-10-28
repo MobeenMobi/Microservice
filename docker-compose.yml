@@ -1,0 +1,70 @@
+version: '3.9'
+
+services:
+  order-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: order-db
+    environment:
+      SA_PASSWORD: "YourStrong!Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    networks:
+      - backend
+
+  order-service:
+    build:
+      context: ./order-service
+    container_name: order-service
+    depends_on:
+      - order-db
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=order-db;Database=OrdersDb;User Id=sa;Password=YourStrong!Passw0rd;
+    ports:
+      - "5010:5010"
+    networks:
+      - backend
+
+  product-db:
+    image: postgres:15
+    container_name: product-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ProductsDb
+    ports:
+      - "5432:5432"
+    networks:
+      - backend
+
+  product-service:
+    build:
+      context: ./product-service
+    container_name: product-service
+    depends_on:
+      - product-db
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=product-db;Database=ProductsDb;Username=postgres;Password=Inno@123
+    ports:
+      - "5038:5038"
+    networks:
+      - backend
+
+  graphql-gateway:
+    build:
+      context: ./graphql-gateway
+    container_name: graphql-gateway
+    depends_on:
+      - order-service
+      - product-service
+    environment:
+      - ORDERS_SERVICE_URL=http://order-service:5010
+      - PRODUCTS_SERVICE_URL=http://product-service:5038
+    ports:
+      - "5128:5128"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

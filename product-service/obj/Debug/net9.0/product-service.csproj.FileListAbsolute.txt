@@ -151,6 +151,7 @@ E:\microservices-sample\product-service\obj\Debug\net9.0\product-service.Assembl
 E:\microservices-sample\product-service\obj\Debug\net9.0\product-service.csproj.CoreCompileInputs.cache
 E:\microservices-sample\product-service\obj\Debug\net9.0\product-service.MvcApplicationPartsAssemblyInfo.cs
 E:\microservices-sample\product-service\obj\Debug\net9.0\product-service.MvcApplicationPartsAssemblyInfo.cache
+E:\microservices-sample\product-service\obj\Debug\net9.0\product-service.sourcelink.json
 E:\microservices-sample\product-service\obj\Debug\net9.0\rjimswa.dswa.cache.json
 E:\microservices-sample\product-service\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 E:\microservices-sample\product-service\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
